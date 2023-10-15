@@ -7,12 +7,11 @@ using namespace std;
 
 int main()
 {
-	srand(time(NULL));
+	
 	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
 	int b;
 	for (int i =9; i > 0; i--)
 	{
-		;
 		swap(a[rand() % a[i - 1]], a[i]);
 	}
 	for (int i = 0; i < 10; i++)
@@ -22,10 +21,6 @@ int main()
 
 
 }
-//#include <iostream>
-//#include<algorithm>
-//using namespace std;
-//
 //void CalcMulC(int* array, int size)
 //{
 //	srand(time(NULL));
@@ -47,7 +42,6 @@ int main()
 //}
 //int main()
 //{
-//
 //	int* array;
 //	int size;
 //	cout << "何個生成しますか？1～9" << endl;
@@ -59,6 +53,7 @@ int main()
 //	array = NULL;
 //
 //}
+
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
 
