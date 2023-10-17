@@ -5,23 +5,7 @@
 #include<algorithm>
 using namespace std;
 
-int main()
-{
-	
-	int a[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	int b;
-	for (int i =9; i > 0; i--)
-	{
-		swap(a[rand() % a[i - 1]], a[i]);
-	}
-	for (int i = 0; i < 10; i++)
-	{
-		cout << a[i]<<" ";
-	}
-
-
-}
-/*void randok(int* arr, int size) {
+void randok(int* arr, int size) {
 
     for (int i = 0; i < size; i++)
     {
@@ -44,14 +28,14 @@ void bubbleSort(int* arr, int size) {
             }
         }
     }
-    cout << "\nソート後の配列: ";
+    cout << "\n\nソート後の配列: ";
     for (int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
-    cout << "\nランダム化した配列" << endl;
+    cout << "\n\nランダム化した配列:";
     for (int i = 0; i < size; i++)
     {
-        swap(arr[rand() % arr[i - 1]], arr[i]);
+        swap(arr[rand() % size], arr[i]);
     }
     for (int i = 0; i < size; i++)
     {
@@ -70,7 +54,7 @@ int main() {
     bubbleSort(arr, size);
 
     delete[] arr;
-}*/
+}
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
