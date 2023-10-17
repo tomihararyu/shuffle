@@ -21,7 +21,7 @@ int main()
 
 
 }
-void randok(int* arr, int size) {
+/*void randok(int* arr, int size) {
 
     for (int i = 0; i < size; i++)
     {
@@ -30,47 +30,47 @@ void randok(int* arr, int size) {
 
 }
 
-//void bubbleSort(int* arr, int size) {
-//    cout << "ソート前の配列: ";
-//    for (int i = 0; i < size; i++) {
-//        cout << arr[i] << " ";
-//    }
-//    for (int i = 0; i < size - 1; i++) {
-//        for (int j = 0; j < size - i - 1; j++) {
-//            if (arr[j] > arr[j + 1]) {
-//                int temp = arr[j];
-//                arr[j] = arr[j + 1];
-//                arr[j + 1] = temp;
-//            }
-//        }
-//    }
-//    cout << "\nソート後の配列: ";
-//    for (int i = 0; i < size; i++) {
-//        cout << arr[i] << " ";
-//    }
-//    cout << "\nランダム化した配列" << endl;
-//    for (int i = size; i > 0; i--)
-//    {
-//        swap(arr[rand() % arr[i - 1]], arr[i]);
-//    }
-//    for (int i = 0; i < 10; i++)
-//    {
-//        cout << arr[i] << " ";
-//    }
-//}
-//
-//int main() {
-//    srand(time(NULL));
-//    int* arr;
-//    int size;
-//    cout << "何個生成しますか？1～9" << endl;
-//    cin >> size;
-//    arr = new int[size];
-//    randok(arr, size);
-//    bubbleSort(arr, size);
-//
-//    delete[] arr;
-//}
+void bubbleSort(int* arr, int size) {
+    cout << "ソート前の配列: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    cout << "\nソート後の配列: ";
+    for (int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << "\nランダム化した配列" << endl;
+    for (int i = 0; i < size; i++)
+    {
+        swap(arr[rand() % arr[i - 1]], arr[i]);
+    }
+    for (int i = 0; i < size; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
+
+int main() {
+    srand(time(NULL));
+    int* arr;
+    int size;
+    cout << "何個生成しますか？1～9" << endl;
+    cin >> size;
+    arr = new int[size];
+    randok(arr, size);
+    bubbleSort(arr, size);
+
+    delete[] arr;
+}*/
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
 // プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
