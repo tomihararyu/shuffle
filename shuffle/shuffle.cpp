@@ -21,37 +21,55 @@ int main()
 
 
 }
-//void CalcMulC(int* array, int size)
-//{
-//	srand(time(NULL));
-//	for (int i = 0; i < size; i++)
-//	{
-//		array[i] = rand() % 99;
-//	}
-//	for (int i = size; i > 0; i--)
-//	{
-//		swap(array[rand() % array[i - 1]], array[i]);
-//	}
+void randok(int* arr, int size) {
+
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rand() % 99;
+    }
+
+}
+
+//void bubbleSort(int* arr, int size) {
+//    cout << "ソート前の配列: ";
+//    for (int i = 0; i < size; i++) {
+//        cout << arr[i] << " ";
+//    }
+//    for (int i = 0; i < size - 1; i++) {
+//        for (int j = 0; j < size - i - 1; j++) {
+//            if (arr[j] > arr[j + 1]) {
+//                int temp = arr[j];
+//                arr[j] = arr[j + 1];
+//                arr[j + 1] = temp;
+//            }
+//        }
+//    }
+//    cout << "\nソート後の配列: ";
+//    for (int i = 0; i < size; i++) {
+//        cout << arr[i] << " ";
+//    }
+//    cout << "\nランダム化した配列" << endl;
+//    for (int i = size; i > 0; i--)
+//    {
+//        swap(arr[rand() % arr[i - 1]], arr[i]);
+//    }
+//    for (int i = 0; i < 10; i++)
+//    {
+//        cout << arr[i] << " ";
+//    }
 //}
-//void ShowArray(const int* array, int size)
-//{
-//	for (int i = 0; i < size; i++)
-//	{
-//		cout << array[i] << " ";
-//	}
-//}
-//int main()
-//{
-//	int* array;
-//	int size;
-//	cout << "何個生成しますか？1～9" << endl;
-//	cin >> size;
-//	array = new int[size];
-//	CalcMulC(array, size);
-//	ShowArray(array, size);
-//	delete[] array;
-//	array = NULL;
 //
+//int main() {
+//    srand(time(NULL));
+//    int* arr;
+//    int size;
+//    cout << "何個生成しますか？1～9" << endl;
+//    cin >> size;
+//    arr = new int[size];
+//    randok(arr, size);
+//    bubbleSort(arr, size);
+//
+//    delete[] arr;
 //}
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
